@@ -58,13 +58,8 @@ All 4 servers are registered declaratively in `mcp.json` and loaded at runtime v
 - **Groq API Key** ([console.groq.com](https://console.groq.com/))
 - **Tavily API Key** ([tavily.com](https://tavily.com/))
 
-### 1. Clone the Repository
-```bash
-git clone [https://github.com/mswargwani/](https://github.com/mswargwani/)<your-repo-name>.git
-cd <your-repo-name>
-```
 
-### 2. Create a Virtual Environment & Install Dependencies
+### 1. Create a Virtual Environment & Install Dependencies
 ```bash
 python -m venv .venv
 
@@ -77,7 +72,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-### 3. Configure Environment Variables
+### 2. Configure Environment Variables
 Create a `.env` file in the project root:
 ```env
 GROQ_API_KEY=your_groq_api_key_here
