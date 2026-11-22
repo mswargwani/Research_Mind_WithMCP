@@ -1,0 +1,31 @@
+{
+    "mcpServers": {
+      "tavily": {
+        "transport": "http",
+        "url": "https://mcp.tavily.com/mcp/",
+        "headers": {
+          "Authorization": "Bearer ${TAVILY_API_KEY}",
+          "DEFAULT_PARAMETERS": "{\"max_results\": 5, \"search_depth\": \"basic\"}"
+        }
+      },
+      "wikipedia": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": ["-y", "wikipedia-mcp"]
+      },
+      "playwright": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": ["-y", "@playwright/mcp@latest", "--headless"]
+      },
+      "filesystem": {
+        "transport": "stdio",
+        "command": "npx",
+        "args": [
+          "-y",
+          "@modelcontextprotocol/server-filesystem",
+          "${REPORTS_DIR}"
+        ]
+      }
+    }
+  }

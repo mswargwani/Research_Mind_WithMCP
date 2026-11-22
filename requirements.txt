@@ -1,0 +1,12 @@
+# Core LLM + LangChain ecosystem
+langchain
+langchain-core
+langchain-groq
+
+# MCP (Model Context Protocol)
+mcp
+langchain-mcp-adapters
+
+# Environment & UI
+python-dotenv
+streamlit
